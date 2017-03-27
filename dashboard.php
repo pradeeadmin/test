@@ -3,6 +3,7 @@ class dashboard extends CI_Controller{
 
 	public function index($link1='',$link2='',$link3=''){
 		$data['title'] = 'Telemarketing - Dashboard';
+		
 		$menus['menu'] = 'dashboard'; 
 		if($this->session->userdata('login') == FALSE)
 		{
